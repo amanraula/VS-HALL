@@ -1,0 +1,150 @@
+/* Show all elements when the checkbox is checked */
+/* *{
+    visibility: visible !important;
+} */
+/*======================================================*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* text-align: center; */
+}
+.container {
+    position: relative; /* Position the blue pin relative to the container */
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport heiFht */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.map {
+    border-radius: 50px;
+    border: 10px solid black;
+    width:900px;
+    z-index: 1;}
+.bp1{
+    left: 600px;
+    top: 280px;
+
+    background-color: rgb(130,255,243,0.5);
+    border-radius: 40px;
+    width: 50px;
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: width 1s;
+}
+.bp1:hover{
+    width:100px;
+    /*text visible*/   
+    background-color: rgb(0,0,0,0);
+}
+.bp1:hover ~ .E1-8,
+.bp1:hover ~ .E9-16,
+.bp1:hover ~ .E17-24,
+.bp1:hover ~ .E25-32{
+    visibility: visible !important; 
+    
+}
+
+#rnE {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 13, 194);
+    font-size:19px;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+
+.E1-8 {
+    left: 590px;
+    top: 190px;
+    position: absolute;
+    visibility: hidden;
+   
+}
+.E9-16 {
+    left: 510px;
+    top: 220px;
+    position: absolute;
+    visibility: hidden;
+    
+}
+.E17-24 {
+    left: 520px;
+    top: 290px;
+    position: absolute;
+    visibility: hidden;
+   
+}
+.E25-32 {
+    left: 620px;
+    top: 260px;
+    position: absolute;
+    visibility: hidden;
+   
+}
+.bp2{
+    left: 720px;
+    top: 199px;
+
+    background-color: rgb(130,255,243,0.5);
+    border-radius: 40px;
+    width: 50px;
+    position: absolute;
+    
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: width 1s;
+}
+.bp2:hover{
+    width:100px;
+    /*text visible*/   
+    background-color: rgb(0,0,0,0);
+}
+.bp2:hover ~ .F1-8,
+.bp2:hover ~ .F9-16,
+.bp2:hover ~ .F17-24,
+.bp2:hover ~ .F25-32{
+    visibility: visible !important; 
+    
+}
+#rnF {
+    color: rgb(255, 255, 255);
+    background-color: rgb(24, 99, 5);
+    font-size:19px;
+    padding: 10px;
+    font-size: larger;
+    border-radius: 10px;
+}
+.F1-8 {
+    left: 730px;
+    top: 120px;
+    position: absolute;
+    visibility: hidden;
+   
+}
+.F9-16 {
+    left: 615px;
+    top: 130px;
+    position: absolute;
+    visibility: hidden;
+    
+}
+.F17-24 {
+    left: 660px;
+    top: 220px;
+    position: absolute;
+    visibility: hidden;
+   
+}
+.F25-32 {
+    left: 740px;
+    top: 200px;
+    position: absolute;
+    visibility: hidden;
+   
+}
