@@ -2,7 +2,16 @@
 /* *{
     visibility: visible !important;
 } */
-/*======================================================*/
+.vib{
+    width: 100px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+
+}
+/*=====================================================*/
 body, html {
     margin: 0;
     padding: 0;
