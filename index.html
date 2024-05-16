@@ -13,9 +13,11 @@ bp blocks
     <link rel="stylesheet" href="map.css";>
 </head>
 <body>
-    <div style="display: flex; gap:2rem">
+    <div style="display: flex; flex-direction: row; gap:2rem">
         <button class="vib">SHOW ALL</button>
         <label  style="font-size: 20px;">*** Hover over the pins for respective block</p>
+        <button class="pathbtn">HIDE PATHS</button>
+        <button class="mode">DARK THEME</button>
     </div>
        
     
@@ -39,7 +41,10 @@ bp blocks
         <p id="rnF" class="F9-16">F 9-16</p>
         <p id="rnF" class="F17-24">F 17-24</p>
         <p id="rnF" class="F25-32">F 25-32</p>
+
         <img src="block.jpg" class="path" id="efpath">
+        <img src="block.jpg" class="path" id="shortpath">
+        <img src="block.jpg" class="path" id="ehpath">
     </div>
     <script src="map.js"></script>
 </body>
