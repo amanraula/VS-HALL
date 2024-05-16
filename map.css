@@ -2,6 +2,7 @@
 /* *{
     visibility: visible !important;
 } */
+
 .vib{
     width: 100px;
     height: 40px;
@@ -10,6 +11,32 @@
     background-color: black;
     color: white;
 
+}
+.pathbtn{
+    position: absolute;
+    margin-top: 10px;;
+    left:590px;
+    top:0px;
+
+    width: 100px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: rgb(30, 0, 255);
+    color: white;
+}
+.mode{
+    position: absolute;
+    margin-top: 10px;;
+    left:695px;
+    top:0px;
+
+    width: 100px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 20px;
+    background-color: rgb(30, 0, 255);
+    color: white;
 }
 /*=====================================================*/
 body, html {
@@ -32,6 +59,7 @@ body, html {
     border: 10px solid black;
     width:900px;
     z-index: 1;}
+/*=========================================================*/
 .bp1{
     left: 600px;
     top: 280px;
@@ -53,18 +81,22 @@ body, html {
 .bp1:hover ~ .E1-8,
 .bp1:hover ~ .E9-16,
 .bp1:hover ~ .E17-24,
-.bp1:hover ~ .E25-32{
+.bp1:hover ~ .E25-32,.bp1:hover~#efpath,.bp1:hover~#shortpath,.bp1:hover~#ehpath{
     visibility: visible !important; 
+    opacity: 1 ;
     
 }
 
 #rnE {
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: nowrap; 
     background-color: rgb(0, 13, 194);
     font-size:19px;
     padding: 10px;
     font-size: larger;
     border-radius: 10px;
+    z-index: 2; /*AWESOME*/
 }
 
 
@@ -96,6 +128,7 @@ body, html {
     visibility: hidden;
    
 }
+/*========================================*/
 .bp2{
     left: 720px;
     top: 199px;
@@ -117,17 +150,21 @@ body, html {
 .bp2:hover ~ .F1-8,
 .bp2:hover ~ .F9-16,
 .bp2:hover ~ .F17-24,
-.bp2:hover ~ .F25-32{
+.bp2:hover ~ .F25-32,.bp2:hover~#efpath{
     visibility: visible !important; 
+    opacity: 1;
     
 }
 #rnF {
     color: rgb(255, 255, 255);
+    
+    flex-direction: row;
     background-color: rgb(24, 99, 5);
     font-size:19px;
     padding: 10px;
     font-size: larger;
     border-radius: 10px;
+    z-index: 2;
 }
 .F1-8 {
     left: 730px;
@@ -166,8 +203,40 @@ body, html {
     width:110px;
     transform: rotate(134deg);
     opacity:0.7;
+    transition: opacity 0.5s,height 0.5s;
 }
 #efpath:hover{
+    opacity:1;
+    height: 30px;
+}
+#shortpath{
+    display: block;
+    position: absolute;
+    left:410px;
+    top:310px;
+    border-radius: 20px;
+    width:180px;
+    height: 20px;
+    transform: rotate(0deg);
+    opacity:0.6;
+    transition: opacity 0.5s,height 0.5s;
+}
+#shortpath:hover{
+    opacity:1;
+    height: 25px;
+}
+#ehpath{
+    display: block;
+    position: absolute;
+    left:580px;
+    top:350px;
+    border-radius: 20px;
+    width:110px;
+    transform: rotate(41deg);
+    opacity:0.7;
+    transition: opacity 0.5s,height 0.5s;
+}
+#ehpath:hover{
     opacity:1;
     height: 30px;
 }
